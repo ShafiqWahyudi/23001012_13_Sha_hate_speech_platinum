@@ -1,0 +1,38 @@
+.contact-form {
+  padding-top: 100px;
+}
+
+input,
+textarea {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid black;
+}
+
+.contact-submit {
+  background-color: blanchedalmond;
+  color: gray;
+}
+
+.footer {
+  background-color: gray;
+  color: white;
+  height: 120px;
+  padding: 40px;
+}
+
+.footer-logo {
+  float: left;
+  font-size: 32px;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-bottom: 20px;
+}

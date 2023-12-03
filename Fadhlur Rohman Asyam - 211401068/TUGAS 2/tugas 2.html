@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+            $(document).ready(function() {
+          $("p").on({
+            mouseenter: function() {
+              $(this).css("background-color", "lightgray");
+            },
+            mouseleave: function() {
+              $(this).css("background-color", "lightblue");
+            },
+            click: function() {
+              $(this).css("background-color", "yellow");
+            },
+  
+          });
+      });
+      $(document).ready(function() {
+        $("#hide").click(function() {
+          $("p").hide();
+        })
+        $("#show").click(function() {
+          $("p").show();
+        })
+        $("#fadeIn").click(function() {
+        $("p").fadeIn(1000);
+        });
+        $("#fadeOut").click(function() {
+        $("p").fadeOut(1000);
+        });
+        $("#slideUp").click(function() {
+        $("p").slideUp();
+        });
+        $("#slideDown").click(function() {
+        $("p").slideDown();
+        });
+        $("#slideToggle").click(function() {
+        $("p").slideToggle();
+        });
+        $("#animate1").click(function() {
+        $("p").animate({wordSpacing: "+=15px"});
+        });
+        $("#animate2").click(function() {
+        $("p").animate({wordSpacing: "0px"});
+        });
+        });      
+    </script>
+</head>
+
+<body>
+
+        <h2>this is a heading</h2>
+           
+        <p>this is a paragraph</p>
+        <p>this is another paragraph</p>            
+
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        <button id="fadeOut">Fade-Out</button>
+        <button id="fadeIn">Fade-In</button>
+        <button id="slideUp">Slide Up</button>
+        <button id="slideDown">Slide Down</button>
+        <button id="slideToggle">Slide Toggle</button>
+        <button id="animate1">Animate</button>
+        <button id="animate2">Reset</button>
+</body>
+</html>
